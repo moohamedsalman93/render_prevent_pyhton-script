@@ -1,0 +1,24 @@
+requests
+# Website Keepalive Script
+
+This Python script prevents your website hosted on Render from shutting down due to inactivity by periodically sending HTTP requests to it.
+
+## Requirements
+
+- Python 3.x
+- Requests library (installed via `pip install requests`)
+
+## Usage
+
+1. Clone this repository or download the `keepalive.py` script.
+2. Install the required dependencies using pip: `pip install requests`.
+3. Replace `'https://your-website.example.com'` in the script with the actual URL of your website hosted on Render.
+4. Run the script using Python: `python keepalive.py`.
+
+The script will continuously send requests to your website every 5 minutes to keep it responsive.
+
+## Configuration
+
+You can adjust the frequency of requests by changing the sleep duration in the script. By default, it's set to 5 minutes (`time.sleep(5 * 60)`).
+
+
